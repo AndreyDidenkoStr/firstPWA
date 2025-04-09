@@ -6,6 +6,13 @@
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4285f4",
+    "splash_screens": [
+      {
+        "src": "icons/splash-640x1136.png",
+        "sizes": "640x1136",
+        "type": "image/png"
+      }
+    ],
     "icons": [
       {
         "src": "icons/icon-72x72.png",
