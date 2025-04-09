@@ -4,8 +4,11 @@
     "description": "A progressive web application example",
     "start_url": "/",
     "display": "standalone",
+    "display_override": ["window-controls-overlay"],
     "background_color": "#ffffff",
     "theme_color": "#4285f4",
+    "prefer_related_applications": false,
+    "orientation": "portrait",
     "splash_screens": [
       {
         "src": "icons/splash-640x1136.png",

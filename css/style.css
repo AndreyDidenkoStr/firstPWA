@@ -144,3 +144,14 @@
     width: 100%;
   }
   
+  @media (display-mode: window-controls-overlay) { 
+    .header { 
+      padding-right: calc(2 * env(titlebar-area-x)); 
+      padding-left: env(titlebar-area-x); 
+      height: calc(env(titlebar-area-height) + 10px); 
+    } 
+  } 
+  
+  .header__title { 
+    -webkit-app-region: drag; 
+  }
