@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f2f2f7;
+    color: #1c1c1e;
+    padding: 20px;
+  }
+  
+  .app-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .app-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .coffee-item {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease;
+  }
+  
+  .coffee-item:active {
+    transform: scale(0.98);
+  }
+  
+  .coffee-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .coffee-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .coffee-size {
+    font-size: 14px;
+    color: #8e8e93;
+  }
+  
+  .coffee-action {
+    text-align: right;
+  }
+  
+  .coffee-price {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .order-button {
+    padding: 6px 14px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #005ecb;
+  }
+  
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .coffee-item {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease;
+  }
+  
+  .coffee-item:active {
+    transform: scale(0.97);
+  }
+  
+  .coffee-info {
+    margin-bottom: auto;
+  }
+  
+  .coffee-name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .coffee-size {
+    font-size: 13px;
+    color: #8e8e93;
+  }
+  
+  .coffee-action {
+    margin-top: 12px;
+  }
+  
+  .coffee-price {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .order-button {
+    padding: 6px 12px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+  }
+  
