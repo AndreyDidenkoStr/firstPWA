@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My JS Project</title>
-    <title>My PWA APP</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="/manifest.json">
+    <title>Мой PWA-магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- PWA-настройки -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a148c">
+    <!-- Иконка для iOS -->
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello, JavaScript!</h1>
-    <script src="script.js"></script>
-    <script src="app.js"></script>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">TechShop</h1>
+            <button id="cart-btn" class="cart-button">
+                <span id="cart-count">0</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Список товаров -->
+    <main class="products-container">
+        <div class="products" id="products">
+            <div class="product-table-container">
+                <h2 class="section-title">Меню кофе</h2>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Размер</th>
+                            <th>Цена</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                        <tr>
+                            <td>Капучино</td>
+                            <td>Средний</td>
+                            <td>180 руб.</td>
+                            <td><button class="add-to-cart" data-name="Капучино" data-price="180">Заказать</button></td>
+                        </tr>
+                        <tr>
+                            <td>Латте</td>
+                            <td>Большой</td>
+                            <td>200 руб.</td>
+                            <td><button class="add-to-cart" data-name="Латте" data-price="200">Заказать</button></td>
+                        </tr>
+                        <tr>
+                            <td>Эспрессо</td>
+                            <td>Маленький</td>
+                            <td>120 руб.</td>
+                            <td><button class="add-to-cart" data-name="Эспрессо" data-price="120">Заказать</button></td>
+                        </tr>
+                        <!-- Можно добавить больше товаров -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Ваша корзина</h2>
+                <button id="close-modal" class="close-button">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Товары в корзине будут здесь -->
+                <div class="empty-cart">Корзина пуста</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cart-total">0</span> руб.
+                </div>
+                <button id="checkout-btn" class="checkout-button">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+    </script>
 </body>
 </html>
